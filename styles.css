@@ -38,5 +38,28 @@ body {
     margin: auto; /* Center the line */
     border-top: 2px solid #000000; /* Line color and thickness */
   }
+ /* Rectangle Styling */
+ .container {
+    display: flex;
+    justify-content: flex-end; /* Align image and rectangle to the right */
+    padding: 20px;
+    position: relative; /* For gradient alignment */
+  }
 
-  
+  /* Image Styling */
+  .container img {
+    width: 40%; /* Set the image width */
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners */
+    z-index: 2; /* Keep the image above the gradient */
+  }
+
+  /* Rectangle with Gradient */
+  .gradient-rectangle {
+    position: absolute; /* Cover part of the image */
+    width: calc(100% + 200px); /* Match image width + small gap for alignment */
+    height: 100%; /* Full height of the container */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Gradient fade */
+    top: 0;
+    right: calc(10% - 200px); /* Start fading at the left edge of the image */
+  }

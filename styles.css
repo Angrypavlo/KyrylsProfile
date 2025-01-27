@@ -1,13 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit');
+
 body {
-    background-color: powderblue;
+    font-family: 'Kanit';
+    background-color:#FFF0DC;
+  }
+  .center-header{
+    text-align: center;
+  }
+  nav{
+    text-align: center;
+    padding: 10px 20px;;
+    word-spacing: 10px;
+}
+  nav a {
+    color: #131010;
+    font-size: 200%;
+    margin: 0 15px; /* Add space between links */
+    font-weight: bold; /* Make links bold */
+    text-decoration: none; /* Remove underline */
+
+  }
+  nav a:hover {
+    color: #b65d0b; /* Hover effect */
+    transition: color 0.3s ease-in-out;
   }
   h1 {
-    color: blue;
-    font-family: verdana;
+    /* 131010 */
+    color: #F0BB78;
     font-size: 300%;
   }
   p {
-    color: red;
-    font-family: courier;
+    color: #543A14;
     font-size: 160%;
   }
+  .separator-line {
+    width: 60%; /* Line extends to half of the page */
+    margin: auto; /* Center the line */
+    border-top: 2px solid #000000; /* Line color and thickness */
+  }
+
+  
